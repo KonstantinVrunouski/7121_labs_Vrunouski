@@ -17,7 +17,7 @@ int main()
 		s_multi.insert(arr[i]);
 	}
 
-	std::multiset <int> :: iterator it = s_multi.begin();
+	std::multiset <int>::iterator it = s_multi.begin();
 
 	for (int i = 0; i < n; ++i)
 	{
@@ -32,7 +32,7 @@ int main()
 	{
 		for (int i = max_dig_index + 1; i < n; ++i)
 		{
-			res*=arr[i];
+			res *= arr[i];
 		}
 	}
 	else
@@ -44,10 +44,10 @@ int main()
 
 	for (int i = 1; it != s_multi.end(); i++, it++)
 	{
-	       std:: cout << *it << " ";
+	       std::cout << *it << " ";
 	}
-
-	delete [] arr;
+	std::cout << '\n';
+	delete[] arr;
 
 	return 0;
 }
